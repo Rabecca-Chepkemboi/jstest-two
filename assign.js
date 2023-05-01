@@ -13,7 +13,8 @@ function getAvailableBooks() {
         isAvailable: false },
         { title: 'The Odyssey', author: 'Homer', publicationYear: -800, isAvailable: true },
         ];
-    }
+  return myLibrary.filter(book => book.available);
+}
 const availableBooks = getAvailableBooks();
 console.log(availableBooks);
 
